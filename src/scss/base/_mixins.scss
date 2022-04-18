@@ -1,0 +1,41 @@
+@mixin media-1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-991 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin media-768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-578 {
+    @media (max-width: 578px) {
+        @content;
+    }
+}
+
+@mixin titleText($val) {
+    font-size: $val;
+    text-transform: uppercase;
+    font-family: $ff_josefin;
+}
+
+@mixin graphText($val) {
+    font-size: $val;
+    font-family: $ff_alata;
+}
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 3rem;
+    color: red;
+}
